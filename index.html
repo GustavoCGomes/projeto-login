@@ -1,25 +1,53 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Login</title>
+    <script src="https://kit.fontawesome.com/1ab94d0eba.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="estilos/style.css">
+    <title>Login Form</title>
 </head>
 <body>
-    <main>
-        <section id="login">
-            <div id="imagem">
-                foto
-            </div>
-            <div id="formulario">
-                <h1>Login</h1>
-                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
-                <form action="login.php" method="post"></form>
+    <main class="container">
+        <img src="imagens/Sem título.jpg" alt="logo">
+        <h2>Login</h2>
+        <form action="">
+            <div class="input-field">
+                <input type="text" name="username" id="username" placeholder="Enter Your Username" autocomplete="off">
+                <div class="underline"></div>
             </div>
 
-        </section>
+            <div class="input-field">
+                <input type="password" name="password" id="password" placeholder="Enter Your Password">
+                <div class="underline"></div>
+            </div>
+
+            <input type="submit" value="Continue">
+
+        </form>
+
+        <div class="footer">    
+            <span>Or Connect With Social Midia</span>
+            <div class="social-field twitter">
+                <a href="#">
+                    <i class="fab fa-twitter"></i>
+                    Sign in with Twitter
+                </a>
+            </div>
+            <div class="social-field facebook">
+                <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                    Sign in with Facebook
+                </a>
+            </div>
+            <div class="social-field google">
+                <a href="#">
+                    <i class="fab fa-google"></i>
+                    Sign in with Google
+                </a>
+            </div>
+        </div>
     </main>
 </body>
 </html>
