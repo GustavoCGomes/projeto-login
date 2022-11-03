@@ -130,3 +130,12 @@ input:focus {
 .footer .social-field:hover { 
     background: linear-gradient(to right, #1e3b7288, #2a5298a8);
 }
+
+main .cadastro {
+    text-align: center;
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 0.9rem;
+}
+
+
