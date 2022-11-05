@@ -12,10 +12,11 @@
 
 body {
     background:linear-gradient(45deg, #120426,#836AA6);
-    color: white;
+    color: #a36cf0;
     font-weight: 500;
     display: flex;
     min-height: 100vh;
+    min-width: 100vw;
 }
 
 main {
@@ -27,7 +28,8 @@ main {
 }
 
 main h1 {
-    color: white;
+    text-align: center;
+    color: #a36cf0;
     font-size: 3rem;
     margin-bottom: 3rem;
 }
@@ -50,7 +52,7 @@ main .alternative span {
     font-size: 1.1rem;
     font-weight: 400;
     position: relative;
-    color: #751af3;
+    color: #a36cf0;
 }
 
 main .alternative span::before, main .alternative span::after  {
@@ -60,7 +62,7 @@ main .alternative span::before, main .alternative span::after  {
     width: 100px;
     bottom: 50%;
     right: 50px;
-    background: #751af3;
+    background: #a36cf0;
 }
 
 main .alternative span::after  {
@@ -88,7 +90,7 @@ main form label span {
 }
 
 main form input {
-    background-color: #5c13c4;
+    background-color: #490d9c;
     width: 300px;
     height: 50px;
     padding: 0 0.5rem;
@@ -97,32 +99,69 @@ main form input {
     font-size: 1rem;
     border: 1px solid #2b095a;
     border-radius: 8px;
+    outline: none;
 }
 
 main form input[type="submit"] {
     cursor: pointer;
     width: 50%;
-    margin-top: 2rem;
+    margin-top: 3rem;
     border: none;
     border-radius: 32px;
-    background: #2b095a;
-    color: white;
+    background: #490d9c;
+    color: #a36cf0;
     font-size: 1.1rem;
     transition: all .3s ease-in-out;
 }
 
 main form input[type="submit"]:hover {
-    background: #430c91d5;
+    background: #2f0866d5;
 }
 
-/*
-section .images .circle {
+section.images{
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.images img {
+    max-width: 90%;
+}
+
+section.images .circle {
     position: absolute;
     height: 100%;
     width: 100%;
     top: 0;
     left: 0;
-    background: white;
-    clip-path: circle(40% at right 80%);
+    background: #a36cf0;
+    clip-path: circle(56% at right 50%);
     z-index: -1;
-}*/
+}
+
+@media only screen and (max-width: 900px) {
+    section.images {
+        display: none;
+        visibility: hidden;
+    }
+
+    main {
+        width: 100vw;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    main h1 {
+        font-size: 2rem;
+    }
+
+    main .alternative span {
+        font-size: 0.8rem;
+    }
+
+    main form label span, main form input[type='submit'] {
+        font-size: 1rem;
+    }
+
+}

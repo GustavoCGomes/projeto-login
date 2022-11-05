@@ -68,7 +68,7 @@ form input[type="submit"]{
     margin-top: 2rem;
     padding: 0.4rem;
     background: linear-gradient(to left, #120426,#836AA6);
-    color: white;
+    color: #c8a2fc;
     cursor: pointer;
     font-size: 0.9rem;
     border-radius: 4px;
@@ -116,14 +116,19 @@ input:focus {
     transition: all 0.3 ease;
 }
 
-.footer .social-field.twitter {
-    background: linear-gradient(to  right, #56a7f2,  #468aca);
+.footer .social-field.google a {
+    color: #120426;
+}
+
+.footer .social-field.google {
+    background: linear-gradient(to right, #e8eaee, #dbe1ebe1);
+}
+
+.footer .social-field.linkedin {
+    background: linear-gradient(to  right, #174bac, #2a5298);
 }
 
 .footer .social-field.facebook {
-    background: linear-gradient(to right, #1e3c72, #2a5298);
-}
-.footer .social-field.google {
     background: linear-gradient(to right, #1e3c72, #2a5298);
 }
 
