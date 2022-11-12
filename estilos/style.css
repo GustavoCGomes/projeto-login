@@ -21,10 +21,15 @@ body {
     justify-content: center;
 }
 
+#logo {
+max-width: 200px;
+align-items: center;
+}
+
 main.container {
     background: white;
-    max-width: 350px;
-    min-height: 40vh;
+    max-width: 300px;
+    max-height: 625px;
     padding: 2rem;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
